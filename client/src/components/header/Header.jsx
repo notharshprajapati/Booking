@@ -28,7 +28,6 @@ const Header = ({ type }) => {
     },
   ]);
   const [openOptions, setOpenOptions] = useState(false);
-  const { user } = useContext(AuthContext);
   const [options, setOptions] = useState({
     adult: 1,
     children: 0,
@@ -36,6 +35,8 @@ const Header = ({ type }) => {
   });
 
   const navigate = useNavigate();
+  const { user } = useContext(AuthContext);
+
 
   const handleOption = (name, operation) => {
     setOptions((prev) => {

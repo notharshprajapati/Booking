@@ -1,37 +1,35 @@
 import mongoose from "mongoose";
-const { Schema } = mongoose;
-
 const HotelSchema = new mongoose.Schema({
   name: {
     type: String,
-    reqired: true,
+    required: true,
   },
   type: {
     type: String,
-    reqired: true,
+    required: true,
   },
   city: {
     type: String,
-    reqired: true,
+    required: true,
   },
   address: {
     type: String,
-    reqired: true,
+    required: true,
   },
   distance: {
     type: String,
-    reqired: true,
+    required: true,
   },
   photos: {
     type: [String],
   },
   title: {
     type: String,
-    reqired: true,
+    required: true,
   },
   desc: {
     type: String,
-    reqired: true,
+    required: true,
   },
   rating: {
     type: Number,
@@ -43,7 +41,7 @@ const HotelSchema = new mongoose.Schema({
   },
   cheapestPrice: {
     type: Number,
-    reqired: true,
+    required: true,
   },
   featured: {
     type: Boolean,
@@ -51,4 +49,4 @@ const HotelSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model("Hotel", HotelSchema);
+export default mongoose.model("Hotel", HotelSchema)
